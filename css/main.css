@@ -1,51 +1,3 @@
-/* =================================================================== 
- *
- *  Epitome Main Stylesheet
- *  Template Ver. 1.0.0
- *  04-22-2019
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *     ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms 
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## additional typo styles 
- *    ## skillbars
- *    ## alert box 
- *    ## pagination 
- *  # Common and Reusable Styles
- *  # header 
- *    ## header logo
- *    ## main navigation
- *    ## menu trigger
- *  # intro 
- *  # about
- *    ## timeline
- *  # services
- *  # CTA
- *  # works
- *  # testimonials
- *  # contact
- *  # footer
- *    ## copyright
- *    ## go to top
- *  # IE10/IE11 Specific
- *
- * =================================================================== */
-
-
 
 /* ===================================================================
  * # base style overrides
@@ -400,27 +352,6 @@ dd {
 }
 
 /* ------------------------------------------------------------------- 
- * ## responsive video container
- * ------------------------------------------------------------------- */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed,
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* ------------------------------------------------------------------- 
  * ## floated image
  * ------------------------------------------------------------------- */
 img.pull-right {
@@ -555,8 +486,8 @@ form,
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   margin-left: -30px;
   margin-top: -30px;
@@ -1450,10 +1381,6 @@ input::-moz-focus-inner {
   max-width: 1000px;
 }
 
-.heading-block {
-  position: relative;
-}
-
 .heading-block--center {
   max-width: 940px;
   text-align: center;
@@ -1465,8 +1392,8 @@ input::-moz-focus-inner {
   font-size: 1.7rem;
   line-height: 1.176;
   text-transform: uppercase;
-  letter-spacing: .5rem;
-  margin-top: 0;
+  letter-spacing: .25rem;
+  margin-top: -5rem;
   padding-top: 3.2rem;
   margin-bottom: 8rem;
   position: relative;
@@ -1498,7 +1425,7 @@ input::-moz-focus-inner {
 
 .section-desc {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 5.4rem;
+  font-size: 4.2rem;
   font-weight: 400;
   line-height: 1.259;
   letter-spacing: -0.05rem;
@@ -1519,10 +1446,7 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * common and reusable styles
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width:1200px) {
   .item-title {
     font-size: 3rem;
@@ -1647,7 +1571,7 @@ input::-moz-focus-inner {
   display: inline-block;
   list-style: none;
   margin-left: 0;
-  margin-top: 18px;
+  margin-top: 3rem;
 }
 
 .header-nav-wrap li {
@@ -1657,7 +1581,7 @@ input::-moz-focus-inner {
 
 .header-nav-wrap li a {
   display: block;
-  line-height: calc(78px - (18px * 2));
+  line-height: 42px;
 }
 
 .header-main-nav {
@@ -1924,10 +1848,10 @@ input::-moz-focus-inner {
 }
 
 .intro-pic {
-  background-color: #02182c;
+  /* background-color: #02182c; */
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url(../images/hero-pic.jpg);
+  background-image: url(../images/front-photo2.png);
   background-size: cover;
   position: absolute;
   top: 20%;
@@ -1947,22 +1871,24 @@ input::-moz-focus-inner {
   opacity: .2;
 }
 
-.intro-grid {
-  background-image: url(../images/pattern-dot-grid.svg);
-  background-size: 24px 24px;
-  opacity: .15;
+.intro-bg {
+  background-image: url(../images/60286.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: .35;
   position: absolute;
-  top: 30%;
+  top: 0;
   right: 0;
   bottom: 0;
-  left: 30%;
+  left: 0;
 }
 
 .intro-text {
   -webkit-transform: translate3d(0, -3.6rem, 0);
   transform: translate3d(0, -3.6rem, 0);
   position: static;
-  z-index: 1;
+  z-index: 2;
 }
 
 .intro-text h3 {
@@ -2167,7 +2093,7 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 19.2rem;
+  padding-top: 15rem;
   padding-bottom: 16.8rem;
   background-color: #ffffff;
 }
@@ -2182,13 +2108,6 @@ input::-moz-focus-inner {
 
 .s-about > [class*="about-"]:last-child {
   margin-bottom: 0;
-}
-
-.about-me__text {
-  -webkit-columns: 2 360px;
-  -moz-columns: 2 360px;
-  columns: 2 360px;
-  column-gap: 64px;
 }
 
 .about-me__buttons {
@@ -2510,7 +2429,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/services-photo.png);
   color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
@@ -3275,7 +3194,7 @@ input::-moz-focus-inner {
 .s-contact {
   padding-top: 18.4rem;
   padding-bottom: 6.4rem;
-  background-color: #050505;
+  background-color: #ffffff;
 }
 
 .contact-main a {
@@ -3287,12 +3206,12 @@ input::-moz-focus-inner {
 .contact-main a:focus,
 .contact-main a:active {
   color: #00f028;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .contact-email {
   font-family: "Roboto", sans-serif;
-  font-size: 11.2rem;
+  font-size: 6.2rem;
   font-weight: 400;
   line-height: 1;
   margin: 5.6rem 0 8rem;
@@ -3317,11 +3236,11 @@ input::-moz-focus-inner {
   line-height: 1.333;
   margin-top: 0;
   margin-bottom: .8rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .contact-infos a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact-infos a:hover,
@@ -3546,7 +3465,7 @@ footer a:visited {
   -ms-transform-origin: left bottom;
   transform-origin: left bottom;
   position: absolute;
-  left: calc(30px + 15px);
+  left: 45px;
   top: -165px;
 }
 
