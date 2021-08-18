@@ -1,4 +1,4 @@
-# TEST
+# Personal website
 
 ==================================================================================================
 
@@ -20,9 +20,8 @@ Fonts:
 
 Icons:
  - Font Awesome (https://fontawesome.com/)
- - Iconmonstr (https://iconmonstr.com/)
  
-Javascript Files:
+Javascript:
  - JQuery (http://jquery.com/)
  - Modernizr (http://modernizr.com/)
  - Masonry JS (https://masonry.desandro.com/)
