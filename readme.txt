@@ -1,3 +1,5 @@
+# TEST
+
 ==================================================================================================
 
 
@@ -19,10 +21,6 @@ Fonts:
 Icons:
  - Font Awesome (https://fontawesome.com/)
  - Iconmonstr (https://iconmonstr.com/)
- 
-
-Stock Photos and Graphics:
- - Unsplash.com (https://unsplash.com/)
  
 Javascript Files:
  - JQuery (http://jquery.com/)
